@@ -1,3 +1,3 @@
-# CI/CD with GitHub Actions
+# CI/CD Pipeline with GitHub Actions
 
-This project demonstrates the implementation of a CI/CD pipeline using GitHub Actions, including automated build, testing, and deployment workflows.
+This project showcases a CI/CD pipeline implementation using GitHub Actions, featuring automated build, testing, and deployment workflows to streamline the software delivery process.
