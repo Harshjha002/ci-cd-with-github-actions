@@ -1,0 +1,16 @@
+name: Hello World Workflow
+
+# Trigger workflow on push to main and production branches
+on:
+  push:
+    branches:
+      - main
+      - production
+
+jobs:
+  main_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Hello World
+        run: echo "Hello World"
