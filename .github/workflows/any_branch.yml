@@ -1,0 +1,14 @@
+name: Push on Any Branch
+
+on:
+  push:
+    branches:
+      - "**"
+
+jobs:
+  anyBranch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: On any push
+        run: echo "Something pushed"
