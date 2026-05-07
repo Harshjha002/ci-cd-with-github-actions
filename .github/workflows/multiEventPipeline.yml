@@ -6,6 +6,9 @@ on:
       - main
       - test
 
+  schedule:
+  - cron: '10 11 * * *'
+
   pull_request:
     branches:
       - main
@@ -57,3 +60,11 @@ jobs:
     steps:
       - name: Running on workflow dispatch request
         run: echo "Running on workflow dispatch"
+
+  on-schedule:
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Running scheduled workflow
+        run: echo "Workflow triggered by schedule event"
