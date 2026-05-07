@@ -22,5 +22,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Running on pull request
-        run: echo "Running on pull request"
+        run: echo "Running on pull request check"
 
