@@ -11,6 +11,8 @@ on:
       - main
       - test
 
+  workflow_dispatch:
+
 jobs:
   on-push:
     if: github.event_name == 'push'
